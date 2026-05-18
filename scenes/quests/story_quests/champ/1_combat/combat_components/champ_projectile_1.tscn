@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dcm505t3resui"]
+[gd_scene format=3 uid="uid://fo0vpg77ev"]
 
 [ext_resource type="Script" uid="uid://bofv3bcwj3rx2" path="res://scenes/game_elements/props/projectile/components/projectile.gd" id="1_7n1yb"]
 [ext_resource type="SpriteFrames" uid="uid://5puy1xk3bfva" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/champ_bait_projectile_1.tres" id="2_8345t"]
@@ -10,7 +10,7 @@ bounce = 1.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6xl0"]
 size = Vector2(44, 44)
 
-[node name="ChampProjectile1" type="RigidBody2D" unique_id=1611529190 groups=["projectiles"]]
+[node name="ChampProjectile1" type="RigidBody2D" unique_id=63851214 groups=["projectiles"]]
 collision_layer = 256
 collision_mask = 80
 mass = 0.3
@@ -23,26 +23,26 @@ max_contacts_reported = 1
 script = ExtResource("1_7n1yb")
 label = "a"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1499726276]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=269572329]
 shape = SubResource("RectangleShape2D_o6xl0")
 
-[node name="VisibleThings" type="Node2D" parent="." unique_id=1129773837]
+[node name="VisibleThings" type="Node2D" parent="." unique_id=165953054]
 unique_name_in_owner = true
 position = Vector2(-3, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="VisibleThings" unique_id=1816818143]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="VisibleThings" unique_id=596874647]
 unique_name_in_owner = true
 sprite_frames = ExtResource("2_8345t")
 autoplay = "default"
 
-[node name="TrailFXMarker" type="Marker2D" parent="VisibleThings" unique_id=771420475]
+[node name="TrailFXMarker" type="Marker2D" parent="VisibleThings" unique_id=1661853979]
 unique_name_in_owner = true
 position = Vector2(-40, 0)
 
-[node name="DurationTimer" type="Timer" parent="." unique_id=259732970]
+[node name="DurationTimer" type="Timer" parent="." unique_id=1460577623]
 unique_name_in_owner = true
 
-[node name="HitSound" type="AudioStreamPlayer2D" parent="." unique_id=1862098516]
+[node name="HitSound" type="AudioStreamPlayer2D" parent="." unique_id=1467376648]
 unique_name_in_owner = true
 bus = &"SFX"
 

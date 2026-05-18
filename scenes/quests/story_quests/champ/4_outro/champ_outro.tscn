@@ -7,19 +7,27 @@
 [ext_resource type="TileSet" uid="uid://bo4jyvl3lcww1" path="res://scenes/quests/story_quests/champ/champ_tileset.tres" id="3_o5ika"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_jdkp3"]
 [ext_resource type="Resource" uid="uid://cwp3r5nyfb0bf" path="res://scenes/quests/story_quests/champ/4_outro/outro_components/champ_outro.dialogue" id="5_f2mqr"]
-[ext_resource type="Texture2D" uid="uid://b1knp31rwuxpq" path="res://scenes/quests/story_quests/champ/tiles/assets/blank_champ.png" id="7_276wt"]
 [ext_resource type="Script" uid="uid://ctkcxtbfh6pwf" path="res://scenes/quests/story_quests/champ/4_outro/champ_animation.gd" id="7_jdkp3"]
+[ext_resource type="Texture2D" uid="uid://4ehm7uagd6xi" path="res://student_art/champ2.png" id="9_f2mqr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f2mqr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6d3de"]
+atlas = ExtResource("9_f2mqr")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qhkq"]
+atlas = ExtResource("9_f2mqr")
+region = Rect2(0, 128, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6d3de"]
 animations = [{
 "frames": [{
-"duration": 2.0,
-"texture": ExtResource("7_276wt")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6d3de")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_5qhkq")
 }],
 "loop": true,
 "name": &"default",

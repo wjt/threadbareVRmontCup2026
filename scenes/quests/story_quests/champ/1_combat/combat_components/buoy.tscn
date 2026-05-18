@@ -1,37 +1,37 @@
 [gd_scene format=3 uid="uid://cd24crxnn6c3n"]
 
-[ext_resource type="Texture2D" uid="uid://b8q4yv6gyb7e6" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/buoy.png" id="1_4mo2a"]
+[ext_resource type="Texture2D" uid="uid://6d46uv2751pj" path="res://student_art/buoy.png" id="1_38d7t"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2hnv7"]
-atlas = ExtResource("1_4mo2a")
-region = Rect2(0, 0, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_huixn"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(0, 0, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bo757"]
-atlas = ExtResource("1_4mo2a")
-region = Rect2(128, 0, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_sithc"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(0, 256, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m7sck"]
-atlas = ExtResource("1_4mo2a")
-region = Rect2(0, 128, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_k201w"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(0, 512, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_di156"]
-atlas = ExtResource("1_4mo2a")
-region = Rect2(128, 128, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rkio"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(0, 768, 256, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_13my5"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2hnv7")
+"texture": SubResource("AtlasTexture_huixn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bo757")
+"texture": SubResource("AtlasTexture_sithc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m7sck")
+"texture": SubResource("AtlasTexture_k201w")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_di156")
+"texture": SubResource("AtlasTexture_3rkio")
 }],
 "loop": true,
 "name": &"default",

@@ -23,7 +23,8 @@ var input_vector: Vector2
 @export var blink_bounds: Area2D
 ## How many 64px tiles the player should teleport when the blink key (c) is pressed.
 @export_range(0,24,0.5,"suffix:tiles") var blink_distance = 3.0
-
+#Variable added from resource document
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 ## Controls how the player can interact with the world around them.
 enum Mode {
@@ -47,6 +48,12 @@ func _physics_process(delta: float) -> void:
 		velocity = Vector2.ZERO
 		return
 	
+	#Moved if-else statement from resources document
+	if velocity.is_zero_approx():
+		animated_sprite.play(&"walk")
+	else:
+		animated_sprite.play(&"idle")
+	
 	# Handle stopping and moving
 	var step := (
 		stopping_step if velocity.length_squared() > input_vector.length_squared() else moving_step
@@ -55,7 +62,7 @@ func _physics_process(delta: float) -> void:
 	# Change speed of player
 	velocity = velocity.move_toward(input_vector, step * delta)
 	move_and_slide()
-
+	
 # Blink ability
 func _apply_blink() -> void:
 	# If player is defeated, do nothing.
@@ -109,6 +116,11 @@ func _unhandled_input(_event: InputEvent) -> void:
 		axis.x = -1
 	if(Input.is_action_pressed(&"move_right")):
 		axis.x = 1
+	if(Input.is_action_pressed(&"move_up")):
+		axis.y = -1
+	if(Input.is_action_pressed(&"move_down")):
+		axis.y = 1
+		
 	input_vector = axis * SPEED
 	# TODO: how can we make the character walk up and down?
  	# TODO:  how can we make diagonal speed the same as walking in a straight line?

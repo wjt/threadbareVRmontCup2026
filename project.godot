@@ -8,11 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
-config/name="Threadbare"
+config/name="Pixel Slime Studios"
 config/tags=PackedStringArray("2d", "endless", "game", "tilemap", "top_down")
-run/main_scene="uid://huuo8mnwsphv"
+run/main_scene="uid://dhmhn56wqv5ej"
 config/project_settings_override="user://custom_overrides.cfg"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/stretch_mode=0
@@ -41,7 +45,7 @@ MouseManager="*res://scenes/globals/mouse_manager/mouse_manager.tscn"
 [debug]
 
 gdscript/warnings/untyped_declaration=1
-shapes/paths/geometry_color=Color(0.72156864, 0.003921569, 0.9098039, 0.7764706)
+shapes/paths/geometry_color=Color(0.721569, 0.00392157, 0.909804, 0.776471)
 
 [dialogue_manager]
 

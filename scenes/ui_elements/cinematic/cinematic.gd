@@ -12,7 +12,7 @@ extends Node2D
 signal cinematic_finished
 
 ## Dialogue for cinematic scene.
-@export var dialogue: DialogueResource = preload("uid://b7ad8nar1hmfs")
+@export var dialogue: DialogueResource = preload("uid://dqj53ffq0tgqd")
 
 ## Optional animation player, to be used from [member dialogue] (if needed).
 @export var animation_player: AnimationPlayer
@@ -24,6 +24,7 @@ signal cinematic_finished
 ## If blank, player appears at default position in the scene. If in doubt,
 ## leave this blank.
 @export var spawn_point_path: String
+
 
 
 func _ready() -> void:

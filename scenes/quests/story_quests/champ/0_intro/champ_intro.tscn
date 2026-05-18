@@ -8,11 +8,10 @@
 [ext_resource type="SpriteFrames" uid="uid://ctjbkxw0r2f2i" path="res://scenes/quests/story_quests/champ/player_components/champ_player.tres" id="3_ufx21"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_kpqku"]
 [ext_resource type="Texture2D" uid="uid://ccemoeu8477od" path="res://scenes/quests/story_quests/champ/tiles/assets/poster_yeti.png" id="4_m7ukv"]
-[ext_resource type="Resource" uid="uid://dqj53ffq0tgqd" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/champ_intro.dialogue" id="5_m7ukv"]
 [ext_resource type="Texture2D" uid="uid://dml1odsg20jgn" path="res://scenes/quests/story_quests/champ/tiles/assets/tape.png" id="6_kpqku"]
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="10_43j7a"]
 
-[sub_resource type="Animation" id="Animation_w33xd"]
+[sub_resource type="Animation" id="Animation_m7ukv"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -24,7 +23,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"idle"]
+"values": [&"walk"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -36,40 +35,26 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(400, 349)]
+"values": [Vector2(10, 372)]
 }
 
-[sub_resource type="Animation" id="Animation_cdulr"]
+[sub_resource type="Animation" id="Animation_w33xd"]
 resource_name = "walk_off"
-length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("OnTheGround/Character:animation")
+tracks/0/path = NodePath("OnTheGround/Character:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [&"walk", &"idle"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("OnTheGround/Character:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(495, 478), Vector2(1010, 478)]
+"values": [Vector2(443, 370), Vector2(1063, 371)]
 }
 
-[sub_resource type="Animation" id="Animation_dvm7s"]
+[sub_resource type="Animation" id="Animation_43j7a"]
 resource_name = "walk_on"
-length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -77,10 +62,10 @@ tracks/0/path = NodePath("OnTheGround/Character:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"walk", &"idle"]
+"values": [&"walk"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -89,123 +74,123 @@ tracks/1/path = NodePath("OnTheGround/Character:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 2),
+"times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-50, 478), Vector2(495, 478)]
+"values": [Vector2(10, 372), Vector2(443, 370)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_wslil"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w33xd"]
 _data = {
-&"RESET": SubResource("Animation_w33xd"),
-&"walk_off": SubResource("Animation_cdulr"),
-&"walk_on": SubResource("Animation_dvm7s")
+&"RESET": SubResource("Animation_m7ukv"),
+&"walk_off": SubResource("Animation_w33xd"),
+&"walk_on": SubResource("Animation_43j7a")
 }
 
-[node name="Intro" type="Node2D" unique_id=821693788]
+[node name="Intro" type="Node2D" unique_id=1688566328]
 
-[node name="TileMapLayers" type="Node2D" parent="." unique_id=33915219]
+[node name="TileMapLayers" type="Node2D" parent="." unique_id=1936424711]
 
-[node name="RoomBackground" type="TileMapLayer" parent="TileMapLayers" unique_id=710353688]
+[node name="RoomBackground" type="TileMapLayer" parent="TileMapLayers" unique_id=1023218596]
 tile_map_data = PackedByteArray("AAAAAAYADwAAAAAAAAAAAAcADwAAAAEAAAAAAAgADwAAAAIAAAABAAYADwABAAAAAAABAAcADwABAAEAAAABAAgADwABAAIAAAACAAYADwACAAAAAAACAAcADwACAAEAAAACAAgADwACAAIAAAADAAYADwAAAAAAAAADAAcADwAAAAEAAAADAAgADwAAAAIAAAAEAAYADwABAAAAAAAEAAcADwABAAEAAAAEAAgADwABAAIAAAAFAAYADwACAAAAAAAFAAcADwACAAEAAAAFAAgADwACAAIAAAAGAAYADwAAAAAAAAAGAAcADwAAAAEAAAAGAAgADwAAAAIAAAAHAAYADwABAAAAAAAHAAcADwABAAEAAAAHAAgADwABAAIAAAAIAAYADwACAAAAAAAIAAcADwACAAEAAAAIAAgADwACAAIAAAAJAAYADwAAAAAAAAAJAAcADwAAAAEAAAAJAAgADwAAAAIAAAAKAAYADwABAAAAAAAKAAcADwABAAEAAAAKAAgADwABAAIAAAALAAYADwACAAAAAAALAAcADwACAAEAAAALAAgADwACAAIAAAAMAAYADwAAAAAAAAAMAAcADwAAAAEAAAAMAAgADwAAAAIAAAANAAYADwABAAAAAAANAAcADwABAAEAAAANAAgADwABAAIAAAAOAAYADwACAAAAAAAOAAcADwACAAEAAAAOAAgADwACAAIAAAAAAAUAEAABAAEAAAAAAAQAEAABAAEAAAAAAAMAEAABAAEAAAAAAAIAEAABAAEAAAAAAAEAEAABAAEAAAAAAAAAEAABAAEAAAABAAAAEAABAAEAAAACAAAAEAABAAEAAAADAAAAEAABAAEAAAAEAAAAEAABAAEAAAAFAAAAEAABAAEAAAAGAAAAEAABAAEAAAAHAAAAEAABAAEAAAAIAAAAEAABAAEAAAAJAAAAEAABAAEAAAAKAAAAEAABAAEAAAALAAAAEAABAAEAAAAMAAAAEAABAAEAAAANAAAAEAABAAEAAAAOAAAAEAABAAEAAAAOAAEAEAABAAEAAAAOAAIAEAABAAEAAAANAAIAEAABAAEAAAANAAMAEAABAAEAAAANAAQAEAABAAEAAAAOAAQAEAABAAEAAAAOAAUAEAABAAEAAAANAAUAEAABAAEAAAAMAAUAEAABAAEAAAAMAAQAEAABAAEAAAAOAAMAEAABAAEAAAANAAEAEAABAAEAAAAMAAEAEAABAAEAAAALAAEAEAABAAEAAAAKAAEAEAABAAEAAAAKAAIAEAABAAEAAAAKAAMAEAABAAEAAAAKAAQAEAABAAEAAAAKAAUAEAABAAEAAAALAAUAEAABAAEAAAALAAMAEAABAAEAAAALAAIAEAABAAEAAAAMAAIAEAABAAEAAAAMAAMAEAABAAEAAAALAAQAEAABAAEAAAAJAAUAEAABAAEAAAAIAAUAEAABAAEAAAAHAAUAEAABAAEAAAAGAAUAEAABAAEAAAAFAAUAEAABAAEAAAAEAAUAEAABAAEAAAADAAUAEAABAAEAAAACAAUAEAABAAEAAAABAAUAEAABAAEAAAABAAQAEAABAAEAAAABAAMAEAABAAEAAAABAAIAEAABAAEAAAABAAEAEAABAAEAAAACAAEAEAABAAEAAAACAAIAEAABAAEAAAACAAMAEAABAAEAAAACAAQAEAABAAEAAAADAAQAEAABAAEAAAADAAMAEAABAAEAAAADAAIAEAABAAEAAAADAAEAEAABAAEAAAAEAAEAEAABAAEAAAAEAAIAEAABAAEAAAAEAAMAEAABAAEAAAAEAAQAEAABAAEAAAAFAAQAEAABAAEAAAAGAAQAEAABAAEAAAAHAAQAEAABAAEAAAAIAAQAEAABAAEAAAAJAAQAEAABAAEAAAAJAAMAEAABAAEAAAAIAAMAEAABAAEAAAAHAAMAEAABAAEAAAAGAAMAEAABAAEAAAAFAAMAEAABAAEAAAAFAAIAEAABAAEAAAAGAAIAEAABAAEAAAAHAAIAEAABAAEAAAAIAAIAEAABAAEAAAAJAAIAEAABAAEAAAAJAAEAEAABAAEAAAAIAAEAEAABAAEAAAAHAAEAEAABAAEAAAAGAAEAEAABAAEAAAAFAAEAEAABAAEAAAAPAAYADwAAAAAAAAAPAAcADwAAAAEAAAAPAAgADwAAAAIAAAAQAAYADwABAAAAAAAQAAcADwABAAEAAAAQAAgADwABAAIAAAARAAYADwACAAAAAAARAAcADwACAAEAAAARAAgADwACAAIAAAAPAAAAEAABAAEAAAAQAAAAEAABAAEAAAARAAAAEAABAAEAAAARAAEAEAABAAEAAAARAAIAEAABAAEAAAARAAMAEAABAAEAAAARAAQAEAABAAEAAAARAAUAEAABAAEAAAAQAAUAEAABAAEAAAAPAAUAEAABAAEAAAAPAAQAEAABAAEAAAAQAAQAEAABAAEAAAAQAAMAEAABAAEAAAAPAAMAEAABAAEAAAAPAAIAEAABAAEAAAAQAAIAEAABAAEAAAAQAAEAEAABAAEAAAAPAAEAEAABAAEAAAAAAP//EAABAAEAAAABAP//EAABAAEAAAACAP//EAABAAEAAAADAP//EAABAAEAAAAEAP//EAABAAEAAAAFAP//EAABAAEAAAAGAP//EAABAAEAAAAHAP//EAABAAEAAAAIAP//EAABAAEAAAAJAP//EAABAAEAAAAKAP//EAABAAEAAAALAP//EAABAAEAAAAMAP//EAABAAEAAAANAP//EAABAAEAAAAOAP//EAABAAEAAAAPAP//EAABAAEAAAAQAP//EAABAAEAAAARAP//EAABAAEAAAA=")
 tile_set = ExtResource("1_xxoe7")
 
-[node name="Bigfoot" type="Sprite2D" parent="TileMapLayers" unique_id=1339619381]
+[node name="Bigfoot" type="Sprite2D" parent="TileMapLayers" unique_id=1386370245]
 position = Vector2(414, 106)
 texture = ExtResource("2_ufx21")
 
-[node name="Kraken" type="Sprite2D" parent="TileMapLayers" unique_id=126392439]
+[node name="Kraken" type="Sprite2D" parent="TileMapLayers" unique_id=935180936]
 position = Vector2(570, 275)
 texture = ExtResource("3_kpqku")
 
-[node name="Yeti" type="Sprite2D" parent="TileMapLayers" unique_id=932942387]
+[node name="Yeti" type="Sprite2D" parent="TileMapLayers" unique_id=53237551]
 position = Vector2(726, 95)
 texture = ExtResource("4_m7ukv")
 
-[node name="Champ" type="Sprite2D" parent="TileMapLayers" unique_id=1198352511]
+[node name="Champ" type="Sprite2D" parent="TileMapLayers" unique_id=1587203463]
 position = Vector2(871, 265)
 texture = ExtResource("2_u4i0h")
 
-[node name="tapes" type="Node2D" parent="TileMapLayers" unique_id=603911364]
+[node name="tapes" type="Node2D" parent="TileMapLayers" unique_id=590891495]
 
-[node name="Tape" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1128936258]
+[node name="Tape" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1042725792]
 position = Vector2(474, 30)
 texture = ExtResource("6_kpqku")
 
-[node name="Tape2" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1517473436]
-position = Vector2(358.99997, 30.999992)
+[node name="Tape2" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=353481467]
+position = Vector2(359, 31)
 rotation = -1.16588
 texture = ExtResource("6_kpqku")
 
-[node name="Tape5" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=737293697]
-position = Vector2(466.99997, 179.99998)
+[node name="Tape5" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1682695756]
+position = Vector2(467, 180)
 rotation = -4.37205
 texture = ExtResource("6_kpqku")
 
-[node name="Tape6" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1088589654]
+[node name="Tape6" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1770251994]
 position = Vector2(360, 183)
-rotation = -3.1415927
+rotation = -3.14159
 texture = ExtResource("6_kpqku")
 
-[node name="Tape3" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1381172337]
+[node name="Tape3" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1388427277]
 position = Vector2(783, 20)
 texture = ExtResource("6_kpqku")
 
-[node name="Tape4" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1006117304]
-position = Vector2(670.99994, 21.999992)
+[node name="Tape4" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=440754825]
+position = Vector2(671, 22)
 rotation = -1.16588
 texture = ExtResource("6_kpqku")
 
-[node name="Tape7" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=2073397535]
-position = Vector2(779.9999, 170)
-rotation = -4.405211
+[node name="Tape7" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1195527554]
+position = Vector2(780, 170)
+rotation = -4.40521
 texture = ExtResource("6_kpqku")
 
-[node name="Tape8" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=906757531]
-position = Vector2(674.00006, 170.00003)
-rotation = 3.3684855
+[node name="Tape8" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=586901741]
+position = Vector2(674, 170)
+rotation = 3.36849
 texture = ExtResource("6_kpqku")
 
-[node name="Tape9" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=134492142]
-position = Vector2(514.99994, 197.99998)
+[node name="Tape9" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1283588512]
+position = Vector2(515, 198)
 rotation = -1.16588
 texture = ExtResource("6_kpqku")
 
-[node name="Tape10" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1253193656]
+[node name="Tape10" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1236506428]
 position = Vector2(624, 198)
 texture = ExtResource("6_kpqku")
 
-[node name="Tape11" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=184892089]
-position = Vector2(517.00006, 351)
-rotation = 3.239331
+[node name="Tape11" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1914361589]
+position = Vector2(517, 351)
+rotation = 3.23933
 texture = ExtResource("6_kpqku")
 
-[node name="Tape12" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=157465039]
-position = Vector2(629.99994, 348.99997)
-rotation = -4.340634
+[node name="Tape12" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1434676230]
+position = Vector2(630, 349)
+rotation = -4.34063
 texture = ExtResource("6_kpqku")
 
-[node name="Tape13" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1165605707]
-position = Vector2(813.97, 338.43814)
-rotation = 3.239331
+[node name="Tape13" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=514480790]
+position = Vector2(813.97, 338.438)
+rotation = 3.23933
 texture = ExtResource("6_kpqku")
 
-[node name="Tape14" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1700819010]
+[node name="Tape14" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=374991381]
 position = Vector2(926, 339)
-rotation = -4.340634
+rotation = -4.34063
 texture = ExtResource("6_kpqku")
 
-[node name="Tape15" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=629395433]
-position = Vector2(929.00006, 192)
-rotation = 0.25830874
+[node name="Tape15" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=1077148609]
+position = Vector2(929, 192)
+rotation = 0.258309
 texture = ExtResource("6_kpqku")
 
-[node name="Tape16" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=2031269011]
-position = Vector2(821.00006, 187.99998)
-rotation = -1.2322024
+[node name="Tape16" type="Sprite2D" parent="TileMapLayers/tapes" unique_id=987375811]
+position = Vector2(821, 188)
+rotation = -1.2322
 texture = ExtResource("6_kpqku")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1732752732]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1897559220]
 position = Vector2(153, 366)
 zoom = Vector2(1.333, 1.333)
 limit_left = 0
@@ -215,27 +200,26 @@ limit_bottom = 540
 position_smoothing_enabled = true
 editor_draw_limits = true
 
-[node name="OnTheGround" type="Node2D" parent="." unique_id=1029059295]
+[node name="OnTheGround" type="Node2D" parent="." unique_id=1229878229]
 y_sort_enabled = true
 
-[node name="Character" type="AnimatedSprite2D" parent="OnTheGround" unique_id=1995106097]
-position = Vector2(400, 349)
+[node name="Character" type="AnimatedSprite2D" parent="OnTheGround" unique_id=121002023]
+position = Vector2(10, 372)
 sprite_frames = ExtResource("3_ufx21")
-animation = &"idle"
+animation = &"walk"
 autoplay = "idle"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="OnTheGround" unique_id=15561211]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="OnTheGround" unique_id=664724093]
 root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_wslil")
+libraries/ = SubResource("AnimationLibrary_w33xd")
 
-[node name="ScreenOverlay" type="CanvasLayer" parent="." unique_id=754207830]
+[node name="ScreenOverlay" type="CanvasLayer" parent="." unique_id=1348910584]
 
-[node name="Cinematic" type="Node2D" parent="." unique_id=1546078401 node_paths=PackedStringArray("animation_player")]
+[node name="BackgroundMusic" parent="." unique_id=1529927639 instance=ExtResource("10_43j7a")]
+stream = ExtResource("1_m7ukv")
+
+[node name="Cinematic" type="Node2D" parent="." unique_id=57628830 node_paths=PackedStringArray("animation_player")]
 script = ExtResource("4_kpqku")
-dialogue = ExtResource("5_m7ukv")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
 next_scene = "uid://dhmhn56wqv5ej"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
-
-[node name="BackgroundMusic" parent="." unique_id=1461759951 instance=ExtResource("10_43j7a")]
-stream = ExtResource("1_m7ukv")
