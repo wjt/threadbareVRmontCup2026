@@ -16,13 +16,13 @@
 [ext_resource type="SpriteFrames" uid="uid://0kjkk0ekjgcd" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/champ_target_spriteframes.tres" id="12_x632n"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="13_45tp4"]
 [ext_resource type="PackedScene" uid="uid://driu5llb873ns" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/champ_projectile_3.tscn" id="13_418m7"]
-[ext_resource type="Texture2D" uid="uid://dyyu8w3qtm6q5" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/champ_combat_bait_sign.png" id="14_1o4lf"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="14_bn425"]
-[ext_resource type="Texture2D" uid="uid://ckjior4vavgpy" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/champ_bait_projectile_1.png" id="15_nn4ti"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="15_qewm5"]
 [ext_resource type="PackedScene" uid="uid://cd24crxnn6c3n" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/buoy.tscn" id="15_sm7tj"]
-[ext_resource type="Texture2D" uid="uid://d18ih8m6cmx8d" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/champ_bait_projectile_2.png" id="16_wkm6s"]
-[ext_resource type="Texture2D" uid="uid://ct7ux8rnh0gyo" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/champ_bait_projectile_3.png" id="17_j60m7"]
+[ext_resource type="Texture2D" uid="uid://ccs35r074ajdw" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/PlaceholderBaitSignGreen-1.png (1).png" id="17_j60m7"]
+[ext_resource type="Texture2D" uid="uid://025f7miy2mww" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/Red Fish-1.png.png" id="18_8ja4x"]
+[ext_resource type="Texture2D" uid="uid://emas7bibdtjf" path="res://HENRY'S PNGS/Green Fish-1.png.png" id="19_j60m7"]
+[ext_resource type="Texture2D" uid="uid://c35egd7p10ik8" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/Blue Fish-1.png.png" id="20_neon5"]
 [ext_resource type="Texture2D" uid="uid://b8bo7js8fgtvq" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/circular_ripples.png" id="21_yidpm"]
 [ext_resource type="Texture2D" uid="uid://bopnrtenvp4sm" path="res://scenes/quests/story_quests/champ/tiles/assets/water_ripples.png" id="22_hv7kx"]
 
@@ -246,7 +246,7 @@ position_smoothing_enabled = true
 editor_draw_limits = true
 
 [node name="Player" parent="OnTheGround" unique_id=1168823940 instance=ExtResource("6_r6jc5")]
-position = Vector2(1004, 797)
+position = Vector2(331, 902)
 mode = 1
 sprite_frames = ExtResource("7_utai8")
 
@@ -274,7 +274,6 @@ projectile_scene_for_label = Dictionary[String, PackedScene]({
 [node name="Target1" parent="OnTheGround/Targets" unique_id=510399694 instance=ExtResource("11_p0sed")]
 z_index = 1
 position = Vector2(233, 518)
-scale = Vector2(2, 2)
 sprite_frames = ExtResource("12_x632n")
 label = "a"
 color = Color(1, 1, 1, 1)
@@ -282,7 +281,6 @@ color = Color(1, 1, 1, 1)
 [node name="Target2" parent="OnTheGround/Targets" unique_id=251077809 instance=ExtResource("11_p0sed")]
 z_index = 1
 position = Vector2(843, 244)
-scale = Vector2(2, 2)
 sprite_frames = ExtResource("12_x632n")
 label = "b"
 color = Color(1, 1, 1, 1)
@@ -290,7 +288,6 @@ color = Color(1, 1, 1, 1)
 [node name="Target3" parent="OnTheGround/Targets" unique_id=260100617 instance=ExtResource("11_p0sed")]
 z_index = 1
 position = Vector2(1429, 491)
-scale = Vector2(2, 2)
 sprite_frames = ExtResource("12_x632n")
 label = "c"
 color = Color(1, 1, 1, 1)
@@ -313,26 +310,29 @@ scale = Vector2(1.5, 1.5)
 
 [node name="PlaceholderBaitSign1" type="Sprite2D" parent="OnTheGround/Signs" unique_id=1362706441]
 position = Vector2(175, 711)
-texture = ExtResource("14_1o4lf")
+texture = ExtResource("17_j60m7")
 
 [node name="BaitSprite1" type="Sprite2D" parent="OnTheGround/Signs/PlaceholderBaitSign1" unique_id=2081143706]
-texture = ExtResource("15_nn4ti")
+position = Vector2(5, 9)
+texture = ExtResource("18_8ja4x")
 offset = Vector2(-1, -10)
 
 [node name="PlaceholderBaitSign2" type="Sprite2D" parent="OnTheGround/Signs" unique_id=715278387]
 position = Vector2(773, 688)
-texture = ExtResource("14_1o4lf")
+texture = ExtResource("17_j60m7")
 
 [node name="BaitSprite2" type="Sprite2D" parent="OnTheGround/Signs/PlaceholderBaitSign2" unique_id=1687502515]
-texture = ExtResource("16_wkm6s")
+position = Vector2(2, 9)
+texture = ExtResource("19_j60m7")
 offset = Vector2(-1, -10)
 
 [node name="PlaceholderBaitSign3" type="Sprite2D" parent="OnTheGround/Signs" unique_id=1334877674]
 position = Vector2(1541, 695)
-texture = ExtResource("14_1o4lf")
+texture = ExtResource("17_j60m7")
 
 [node name="BaitSprite3" type="Sprite2D" parent="OnTheGround/Signs/PlaceholderBaitSign3" unique_id=1249786011]
-texture = ExtResource("17_j60m7")
+position = Vector2(2, 9)
+texture = ExtResource("20_neon5")
 offset = Vector2(-1, -10)
 
 [node name="CollectibleItem" parent="OnTheGround" unique_id=1968420657 instance=ExtResource("13_45tp4")]
@@ -405,7 +405,7 @@ frame_progress = 0.5783421
 [node name="Waves6" type="AnimatedSprite2D" parent="OnTheGround/Water Animations" unique_id=607225837]
 position = Vector2(938, 664)
 sprite_frames = SubResource("SpriteFrames_ibswg")
-animation = &"2"
+animation = &"1"
 autoplay = "2"
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="." unique_id=88870344]

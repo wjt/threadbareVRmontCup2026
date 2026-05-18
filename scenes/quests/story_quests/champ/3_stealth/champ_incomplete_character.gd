@@ -109,9 +109,12 @@ func _unhandled_input(_event: InputEvent) -> void:
 		axis.x = -1
 	if(Input.is_action_pressed(&"move_right")):
 		axis.x = 1
+	if(Input.is_action_pressed(&"move_down")):
+		axis.y = 1
+	if(Input.is_action_pressed(&"move_up")):
+		axis.y = -1
 	input_vector = axis * SPEED
-	# TODO: how can we make the character walk up and down?
- 	# TODO:  how can we make diagonal speed the same as walking in a straight line?
+	
 	
 	# Blink ability
 	if(Input.is_action_just_pressed(&"champ_blink")):

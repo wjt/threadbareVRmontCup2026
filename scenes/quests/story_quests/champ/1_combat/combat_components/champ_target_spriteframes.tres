@@ -1,37 +1,37 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://0kjkk0ekjgcd"]
 
-[ext_resource type="Texture2D" uid="uid://odr1oiewgm3p" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/bubbles_target.png" id="1_6y341"]
+[ext_resource type="Texture2D" uid="uid://rh1a47toh78j" path="res://HENRY'S PNGS/Filling.png" id="1_1tc4l"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4tk3m"]
-atlas = ExtResource("1_6y341")
-region = Rect2(64, 64, 64, 64)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbfp7"]
+atlas = ExtResource("1_1tc4l")
+region = Rect2(0, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_f73ck"]
-atlas = ExtResource("1_6y341")
-region = Rect2(0, 64, 64, 64)
+[sub_resource type="AtlasTexture" id="AtlasTexture_8j5kj"]
+atlas = ExtResource("1_1tc4l")
+region = Rect2(128, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_djqgf"]
-atlas = ExtResource("1_6y341")
-region = Rect2(64, 0, 64, 64)
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2ti4"]
+atlas = ExtResource("1_1tc4l")
+region = Rect2(0, 128, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ly58e"]
-atlas = ExtResource("1_6y341")
-region = Rect2(0, 0, 64, 64)
+[sub_resource type="AtlasTexture" id="AtlasTexture_w66ie"]
+atlas = ExtResource("1_1tc4l")
+region = Rect2(128, 128, 128, 128)
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4tk3m")
+"texture": SubResource("AtlasTexture_kbfp7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_f73ck")
+"texture": SubResource("AtlasTexture_8j5kj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_djqgf")
+"texture": SubResource("AtlasTexture_j2ti4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ly58e")
+"texture": SubResource("AtlasTexture_w66ie")
 }],
 "loop": true,
 "name": &"filling",

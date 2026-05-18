@@ -7,23 +7,45 @@
 [ext_resource type="TileSet" uid="uid://bo4jyvl3lcww1" path="res://scenes/quests/story_quests/champ/champ_tileset.tres" id="3_o5ika"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_jdkp3"]
 [ext_resource type="Resource" uid="uid://cwp3r5nyfb0bf" path="res://scenes/quests/story_quests/champ/4_outro/outro_components/champ_outro.dialogue" id="5_f2mqr"]
-[ext_resource type="Texture2D" uid="uid://b1knp31rwuxpq" path="res://scenes/quests/story_quests/champ/tiles/assets/blank_champ.png" id="7_276wt"]
 [ext_resource type="Script" uid="uid://ctkcxtbfh6pwf" path="res://scenes/quests/story_quests/champ/4_outro/champ_animation.gd" id="7_jdkp3"]
+[ext_resource type="Texture2D" uid="uid://cuo78180875i0" path="res://HENRY'S PNGS/Champ FINAL (2).png" id="9_f2mqr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f2mqr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6d3de"]
+atlas = ExtResource("9_f2mqr")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qhkq"]
+atlas = ExtResource("9_f2mqr")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_432sj"]
+atlas = ExtResource("9_f2mqr")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ox5vj"]
+atlas = ExtResource("9_f2mqr")
+region = Rect2(128, 128, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6d3de"]
 animations = [{
 "frames": [{
-"duration": 2.0,
-"texture": ExtResource("7_276wt")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6d3de")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": SubResource("AtlasTexture_5qhkq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_432sj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ox5vj")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 4.0
 }]
 
 [node name="Outro" type="Node2D" unique_id=1390675797]
@@ -72,14 +94,8 @@ script = ExtResource("7_jdkp3")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Champ" unique_id=1886747937]
 shape = SubResource("CircleShape2D_f2mqr")
 
-[node name="Label" type="Label" parent="Champ" unique_id=1256574489]
-offset_left = 305.0
-offset_top = 161.0
-offset_right = 409.0
-offset_bottom = 184.0
-text = "Animate me!"
-
 [node name="Champ Animation" type="AnimatedSprite2D" parent="Champ" unique_id=1380677161]
 position = Vector2(372, 151)
 sprite_frames = SubResource("SpriteFrames_6d3de")
 autoplay = "default"
+frame_progress = 0.83096266

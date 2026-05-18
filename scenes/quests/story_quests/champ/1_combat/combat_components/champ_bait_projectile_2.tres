@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://q0v1wdnrygas"]
 
-[ext_resource type="Texture2D" uid="uid://d18ih8m6cmx8d" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/champ_bait_projectile_2.png" id="1_ogufj"]
+[ext_resource type="Texture2D" uid="uid://emas7bibdtjf" path="res://HENRY'S PNGS/Green Fish-1.png.png" id="1_ogufj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eraii"]
 atlas = ExtResource("1_ogufj")

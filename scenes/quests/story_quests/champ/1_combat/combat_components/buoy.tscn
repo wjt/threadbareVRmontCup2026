@@ -1,37 +1,37 @@
 [gd_scene format=3 uid="uid://cd24crxnn6c3n"]
 
-[ext_resource type="Texture2D" uid="uid://b8q4yv6gyb7e6" path="res://scenes/quests/story_quests/champ/1_combat/combat_components/buoy.png" id="1_4mo2a"]
+[ext_resource type="Texture2D" uid="uid://gujx1faw8qrc" path="res://HENRY'S PNGS/Buoy FINAL.png" id="1_38d7t"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2hnv7"]
-atlas = ExtResource("1_4mo2a")
-region = Rect2(0, 0, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_huixn"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(0, 0, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bo757"]
-atlas = ExtResource("1_4mo2a")
-region = Rect2(128, 0, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_sithc"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(256, 0, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m7sck"]
-atlas = ExtResource("1_4mo2a")
-region = Rect2(0, 128, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_k201w"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(0, 256, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_di156"]
-atlas = ExtResource("1_4mo2a")
-region = Rect2(128, 128, 128, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rkio"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(256, 256, 256, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_13my5"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2hnv7")
+"texture": SubResource("AtlasTexture_huixn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bo757")
+"texture": SubResource("AtlasTexture_sithc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m7sck")
+"texture": SubResource("AtlasTexture_k201w")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_di156")
+"texture": SubResource("AtlasTexture_3rkio")
 }],
 "loop": true,
 "name": &"default",
@@ -44,9 +44,11 @@ radius = 26.076809
 [node name="Buoy" type="Node2D" unique_id=1543752827]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=442459250]
+position = Vector2(1, 0)
+scale = Vector2(0.40625, 0.40625)
 sprite_frames = SubResource("SpriteFrames_13my5")
 autoplay = "default"
-frame_progress = 0.76506466
+frame_progress = 0.982305
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1190209368]
 collision_layer = 16
