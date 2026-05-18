@@ -1,97 +1,47 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://ctjbkxw0r2f2i"]
 
-[ext_resource type="Texture2D" uid="uid://dmyoco5btjhj7" path="res://scenes/quests/story_quests/champ/player_components/champ_player_attack_01.png" id="1_rfo6d"]
-[ext_resource type="Texture2D" uid="uid://d32vart33o2ys" path="res://scenes/quests/story_quests/champ/player_components/champ_player_attack_02.png" id="2_n1xfu"]
-[ext_resource type="Texture2D" uid="uid://b8tf07v4d11e" path="res://scenes/quests/story_quests/champ/player_components/champ_player_defeated.png" id="3_2sihb"]
-[ext_resource type="Texture2D" uid="uid://dglmux1qbhym4" path="res://scenes/quests/story_quests/champ/player_components/champ_player_idle.png" id="4_4scpb"]
-[ext_resource type="Texture2D" uid="uid://dfnthk4d1cysr" path="res://scenes/quests/story_quests/champ/player_components/champ_player_walk.png" id="5_04n5c"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yg72c"]
-atlas = ExtResource("1_rfo6d")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ydd7j"]
-atlas = ExtResource("1_rfo6d")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f8lfs"]
-atlas = ExtResource("1_rfo6d")
-region = Rect2(384, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_scyt1"]
-atlas = ExtResource("1_rfo6d")
-region = Rect2(576, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gjf71"]
-atlas = ExtResource("2_n1xfu")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eyp3i"]
-atlas = ExtResource("2_n1xfu")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nw7ra"]
-atlas = ExtResource("2_n1xfu")
-region = Rect2(384, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3yb8r"]
-atlas = ExtResource("2_n1xfu")
-region = Rect2(576, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cu6lk"]
-atlas = ExtResource("3_2sihb")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_icahe"]
-atlas = ExtResource("3_2sihb")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gwwl8"]
-atlas = ExtResource("4_4scpb")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i6uyh"]
-atlas = ExtResource("4_4scpb")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0myta"]
-atlas = ExtResource("4_4scpb")
-region = Rect2(384, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rbvnd"]
-atlas = ExtResource("4_4scpb")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l1iol"]
-atlas = ExtResource("4_4scpb")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_28wor"]
-atlas = ExtResource("5_04n5c")
-region = Rect2(0, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7nl6p"]
-atlas = ExtResource("5_04n5c")
-region = Rect2(192, 0, 192, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ctslx"]
-atlas = ExtResource("5_04n5c")
-region = Rect2(384, 0, 192, 192)
+[ext_resource type="Texture2D" uid="uid://bj5k56w2eqeo6" path="res://scenes/quests/story_quests/champ/1_combat/egg attack 01-1.png.png" id="1_2sihb"]
+[ext_resource type="Texture2D" uid="uid://04dssimq6n63" path="res://scenes/quests/story_quests/champ/1_combat/egg attack 01-2.png.png" id="2_4scpb"]
+[ext_resource type="Texture2D" uid="uid://bq538ws5rxc4m" path="res://scenes/quests/story_quests/champ/1_combat/Egg Walk-1.png.png" id="2_rfo6d"]
+[ext_resource type="Texture2D" uid="uid://bi8gbic7c0l2o" path="res://scenes/quests/story_quests/champ/1_combat/egg attack 01-3.png.png" id="3_04n5c"]
+[ext_resource type="Texture2D" uid="uid://dfqlwbmfnbyj1" path="res://scenes/quests/story_quests/champ/1_combat/egg attack 01-4.png.png" id="4_yk8q0"]
+[ext_resource type="Texture2D" uid="uid://cn6xn602rkwjm" path="res://scenes/quests/story_quests/champ/1_combat/egg death-1.png.png" id="5_q1k6n"]
+[ext_resource type="Texture2D" uid="uid://miso3a8onbyd" path="res://scenes/quests/story_quests/champ/1_combat/egg death-2.png.png" id="6_0b433"]
+[ext_resource type="Texture2D" uid="uid://dqo42i7tb56rc" path="res://scenes/quests/story_quests/champ/1_combat/egg death-3.png.png" id="7_b4i5q"]
+[ext_resource type="Texture2D" uid="uid://clpbvnxqricjc" path="res://scenes/quests/story_quests/champ/1_combat/egg death-4.png.png" id="8_mdqxw"]
+[ext_resource type="Texture2D" uid="uid://bnv2myoofvb21" path="res://scenes/quests/story_quests/champ/1_combat/egg death-5.png.png" id="9_dof2d"]
+[ext_resource type="Texture2D" uid="uid://d0t6quetm7ojw" path="res://scenes/quests/story_quests/champ/1_combat/egg death-6.png.png" id="10_nrgwr"]
+[ext_resource type="Texture2D" uid="uid://pg7dhwjrtr4n" path="res://scenes/quests/story_quests/champ/1_combat/egg death-7.png.png" id="11_6aot3"]
+[ext_resource type="Texture2D" uid="uid://cec6ocau1uhrh" path="res://scenes/quests/story_quests/champ/1_combat/egg death-8.png.png" id="12_xbvle"]
+[ext_resource type="Texture2D" uid="uid://cprquaayx3xse" path="res://scenes/quests/story_quests/champ/1_combat/egg death-9.png.png" id="13_h8tad"]
+[ext_resource type="Texture2D" uid="uid://c03kh1f3wvwd7" path="res://scenes/quests/story_quests/champ/1_combat/egg death-10.png.png" id="14_61xar"]
+[ext_resource type="Texture2D" uid="uid://bmgh5abbj1wv4" path="res://scenes/quests/story_quests/champ/1_combat/egg death-11.png.png" id="15_pb5i5"]
+[ext_resource type="Texture2D" uid="uid://cq7cuq3nsk4dr" path="res://scenes/quests/story_quests/champ/1_combat/egg death-12.png.png" id="16_lbiqr"]
+[ext_resource type="Texture2D" uid="uid://b4ax5lde673aw" path="res://assets/Eggy Games/Eggy Games Assets/Animations/Egg Idle1-2.png.png" id="18_h8tad"]
+[ext_resource type="Texture2D" uid="uid://dy1ge31jxcglb" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-1.png.png" id="18_xbvle"]
+[ext_resource type="Texture2D" uid="uid://bcpqojn51x1gw" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-2.png (2).png" id="19_h8tad"]
+[ext_resource type="Texture2D" uid="uid://cv2mvygri88yc" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-3.png.png" id="20_61xar"]
+[ext_resource type="Texture2D" uid="uid://d1pjfver3v0v6" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-4.png (1).png" id="21_pb5i5"]
+[ext_resource type="Texture2D" uid="uid://cykcwf1u3mvxq" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-5.png (1).png" id="22_lbiqr"]
+[ext_resource type="Texture2D" uid="uid://cy63h6r4y3bwu" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-6.png.png" id="23_65gxh"]
+[ext_resource type="Texture2D" uid="uid://flio1jmfhayb" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-7.png.png" id="24_g66ng"]
+[ext_resource type="Texture2D" uid="uid://cqokl4lwqi0d4" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-8.png.png" id="25_0ahhj"]
+[ext_resource type="Texture2D" uid="uid://b5ax75i251iwn" path="res://scenes/quests/story_quests/champ/4_outro/Egg Walk-9.png.png" id="26_kd24k"]
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yg72c")
+"texture": ExtResource("1_2sihb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ydd7j")
+"texture": ExtResource("2_4scpb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_f8lfs")
+"texture": ExtResource("3_04n5c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_scyt1")
+"texture": ExtResource("4_yk8q0")
 }],
 "loop": true,
 "name": &"attack_01",
@@ -99,16 +49,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gjf71")
+"texture": ExtResource("1_2sihb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_eyp3i")
+"texture": ExtResource("2_4scpb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nw7ra")
+"texture": ExtResource("3_04n5c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3yb8r")
+"texture": ExtResource("4_yk8q0")
 }],
 "loop": true,
 "name": &"attack_02",
@@ -116,37 +66,40 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cu6lk")
+"texture": ExtResource("5_q1k6n")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_icahe")
+"texture": ExtResource("6_0b433")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cu6lk")
+"texture": ExtResource("7_b4i5q")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_icahe")
+"texture": ExtResource("8_mdqxw")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cu6lk")
+"texture": ExtResource("9_dof2d")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_icahe")
+"texture": ExtResource("10_nrgwr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cu6lk")
+"texture": ExtResource("11_6aot3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_icahe")
+"texture": ExtResource("12_xbvle")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cu6lk")
+"texture": ExtResource("13_h8tad")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_icahe")
+"texture": ExtResource("14_61xar")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cu6lk")
+"texture": ExtResource("15_pb5i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lbiqr")
 }],
 "loop": true,
 "name": &"defeated",
@@ -154,34 +107,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gwwl8")
+"texture": ExtResource("2_rfo6d")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gwwl8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gwwl8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i6uyh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0myta")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0myta")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0myta")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rbvnd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l1iol")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l1iol")
+"texture": ExtResource("18_h8tad")
 }],
 "loop": true,
 "name": &"idle",
@@ -189,22 +118,31 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_28wor")
+"texture": ExtResource("18_xbvle")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7nl6p")
+"texture": ExtResource("19_h8tad")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ctslx")
+"texture": ExtResource("20_61xar")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_28wor")
+"texture": ExtResource("21_pb5i5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7nl6p")
+"texture": ExtResource("22_lbiqr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ctslx")
+"texture": ExtResource("23_65gxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_g66ng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0ahhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_kd24k")
 }],
 "loop": true,
 "name": &"walk",

@@ -1,42 +1,63 @@
 [gd_scene format=4 uid="uid://bbjh0yoqbchuo"]
 
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="1_f2mqr"]
-[ext_resource type="AudioStream" uid="uid://df7ldbesilfry" path="res://assets/first_party/music/Threadbare Loop_Main_Bridge_02.ogg" id="1_jdkp3"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_x48x5"]
+[ext_resource type="AudioStream" uid="uid://c6reoaryl0fuy" path="res://scenes/quests/story_quests/champ/Song.wav" id="2_6d3de"]
 [ext_resource type="SpriteFrames" uid="uid://ctjbkxw0r2f2i" path="res://scenes/quests/story_quests/champ/player_components/champ_player.tres" id="3_276wt"]
 [ext_resource type="TileSet" uid="uid://bo4jyvl3lcww1" path="res://scenes/quests/story_quests/champ/champ_tileset.tres" id="3_o5ika"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_jdkp3"]
 [ext_resource type="Resource" uid="uid://cwp3r5nyfb0bf" path="res://scenes/quests/story_quests/champ/4_outro/outro_components/champ_outro.dialogue" id="5_f2mqr"]
-[ext_resource type="Texture2D" uid="uid://b1knp31rwuxpq" path="res://scenes/quests/story_quests/champ/tiles/assets/blank_champ.png" id="7_276wt"]
 [ext_resource type="Script" uid="uid://ctkcxtbfh6pwf" path="res://scenes/quests/story_quests/champ/4_outro/champ_animation.gd" id="7_jdkp3"]
+[ext_resource type="Texture2D" uid="uid://ifk6hdmg4he" path="res://assets/Eggy Games/Eggy Games Assets/Animations/Champlain monster-1.png.png" id="9_6d3de"]
+[ext_resource type="Texture2D" uid="uid://e6pgors363c1" path="res://assets/Eggy Games/Eggy Games Assets/Animations/Champlain monster-2.png.png" id="10_5qhkq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f2mqr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6d3de"]
 animations = [{
 "frames": [{
-"duration": 2.0,
-"texture": ExtResource("7_276wt")
+"duration": 1.0,
+"texture": ExtResource("9_6d3de")
 }, {
 "duration": 1.0,
-"texture": null
+"texture": ExtResource("10_5qhkq")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_6d3de"]
+resource_name = "dramatic_black_fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5qhkq"]
+_data = {
+&"dramatic_black_fade": SubResource("Animation_6d3de")
+}
+
 [node name="Outro" type="Node2D" unique_id=1390675797]
 
 [node name="BackgroundMusic" parent="." unique_id=1461759951 instance=ExtResource("1_f2mqr")]
-stream = ExtResource("1_jdkp3")
+stream = ExtResource("2_6d3de")
 
 [node name="HUD" parent="." unique_id=885690250 instance=ExtResource("1_x48x5")]
 
 [node name="TileMapLayers" type="Node2D" parent="." unique_id=957602722]
 
 [node name="Lake" type="TileMapLayer" parent="TileMapLayers" unique_id=200613618]
-tile_map_data = PackedByteArray("AAAAAAQAEwAAAAIAAAABAAQAEwABAAIAAAACAAQAEwABAAIAAAADAAQAEwABAAIAAAAEAAQAEwABAAIAAAAFAAQAEwABAAIAAAAGAAQAEwABAAIAAAAHAAQAEwABAAIAAAAIAAQAEwABAAIAAAAJAAQAEwABAAIAAAAKAAQAEwABAAIAAAALAAQAEwABAAIAAAAMAAQAEwABAAIAAAANAAQAEwABAAIAAAAOAAQAEwACAAIAAAAAAAUAEQAAAAAAAAABAAUAEQABAAAAAAACAAUAEQABAAAAAAADAAUAEQABAAAAAAAEAAUAEQABAAAAAAAFAAUAEQABAAAAAAAGAAUAEQABAAAAAAAHAAUAEQABAAAAAAAIAAUAEQABAAAAAAAJAAUAEQABAAAAAAAKAAUAEQABAAAAAAALAAUAEQABAAAAAAAMAAUAEQABAAAAAAANAAUAEQABAAAAAAAOAAUAEQACAAAAAAAOAAYAEQACAAEAAAAOAAcAEQACAAEAAAAOAAgAEQACAAIAAAAAAAgAEQAAAAIAAAAAAAcAEQAAAAEAAAAAAAYAEQAAAAEAAAABAAgAEQABAAIAAAACAAgAEQABAAIAAAADAAgAEQABAAIAAAAEAAgAEQABAAIAAAAFAAgAEQABAAIAAAAGAAgAEQABAAIAAAAHAAgAEQABAAIAAAAIAAgAEQABAAIAAAAJAAgAEQABAAIAAAAKAAgAEQABAAIAAAALAAgAEQABAAIAAAAMAAgAEQABAAIAAAANAAgAEQABAAIAAAAFAAcAEQABAAEAAAAFAAYAEQABAAEAAAAEAAYAEQABAAEAAAADAAYAEQABAAEAAAACAAYAEQABAAEAAAABAAYAEQABAAEAAAABAAcAEQABAAEAAAACAAcAEQABAAEAAAADAAcAEQABAAEAAAAEAAcAEQABAAEAAAAGAAYAEQABAAEAAAAGAAcAEQABAAEAAAAHAAcAEQABAAEAAAAHAAYAEQABAAEAAAAIAAYAEQABAAEAAAAIAAcAEQABAAEAAAAJAAcAEQABAAEAAAAJAAYAEQABAAEAAAAKAAYAEQABAAEAAAAKAAcAEQABAAEAAAALAAcAEQABAAEAAAALAAYAEQABAAEAAAAMAAYAEQABAAEAAAAMAAcAEQABAAEAAAANAAcAEQABAAEAAAANAAYAEQABAAEAAAAAAAMAEwAAAAEAAAAAAAIAEwAAAAEAAAAAAAEAEwAAAAEAAAAAAAAAEwAAAAAAAAABAAAAEwABAAAAAAACAAAAEwABAAAAAAADAAAAEwABAAAAAAAEAAAAEwABAAAAAAAFAAAAEwABAAAAAAAGAAAAEwABAAAAAAAHAAAAEwABAAAAAAAIAAAAEwABAAAAAAAJAAAAEwABAAAAAAAKAAAAEwABAAAAAAALAAAAEwABAAAAAAAMAAAAEwABAAAAAAANAAAAEwABAAAAAAAOAAAAEwACAAAAAAAOAAEAEwACAAEAAAAOAAIAEwACAAEAAAAOAAMAEwACAAEAAAAJAAIAEwABAAEAAAAJAAEAEwABAAEAAAAIAAEAEgABAAEAAAAHAAEAEwABAAEAAAAGAAEAEwABAAEAAAAFAAEAEwABAAEAAAAEAAEAEgABAAEAAAADAAEAEgABAAEAAAACAAEAEwABAAEAAAABAAEAEgABAAEAAAABAAIAEwABAAEAAAABAAMAEgABAAEAAAACAAMAEgABAAEAAAACAAIAEwABAAEAAAADAAIAEgABAAEAAAADAAMAEwABAAEAAAAEAAMAEwABAAEAAAAEAAIAEwABAAEAAAAFAAIAEwABAAEAAAAFAAMAEgABAAEAAAAGAAMAEgABAAEAAAAGAAIAEgABAAEAAAAHAAIAEgABAAEAAAAHAAMAEwABAAEAAAAIAAMAEwABAAEAAAAIAAIAEwABAAEAAAAJAAMAEgABAAEAAAAKAAMAEwABAAEAAAAKAAIAEwABAAEAAAAKAAEAEwABAAEAAAALAAEAEwABAAEAAAALAAIAEgABAAEAAAALAAMAEwABAAEAAAAMAAMAEgABAAEAAAAMAAIAEwABAAEAAAAMAAEAEgABAAEAAAANAAEAEgABAAEAAAANAAIAEwABAAEAAAANAAMAEwABAAEAAAA=")
+tile_map_data = PackedByteArray("AAAAAAQAEwAAAAIAAAABAAQAEwABAAIAAAACAAQAEwABAAIAAAADAAQAEwABAAIAAAAEAAQAEwABAAIAAAAFAAQAEwABAAIAAAAGAAQAEwABAAIAAAAHAAQAEwABAAIAAAAIAAQAEwABAAIAAAAJAAQAEwABAAIAAAAKAAQAEwABAAIAAAALAAQAEwABAAIAAAAMAAQADAABAAEAAAANAAQAEwABAAIAAAAOAAQAEwACAAIAAAAAAAUABgAAAAAAAAABAAUABgABAAAAAAACAAUABgABAAAAAAADAAUABgABAAAAAAAEAAUABgABAAAAAAAFAAUACwABAAEAAAAGAAUABgABAAAAAAAHAAUACwABAAEAAAAIAAUABgABAAAAAAAJAAUABgABAAAAAAAKAAUACwABAAEAAAALAAUABgABAAAAAAAMAAUABgABAAAAAAANAAUACwABAAEAAAAOAAUACwABAAEAAAAOAAYACwABAAEAAAAOAAcACwABAAEAAAAOAAgACwABAAEAAAAAAAgABgAAAAIAAAAAAAcABgAAAAEAAAAAAAYABgAAAAEAAAABAAgABgABAAIAAAACAAgABgABAAIAAAADAAgABgABAAIAAAAEAAgABgABAAIAAAAFAAgACwABAAEAAAAGAAgABgABAAIAAAAHAAgACwABAAEAAAAIAAgABgABAAIAAAAJAAgABgABAAIAAAAKAAgACwABAAEAAAALAAgACwABAAEAAAAMAAgABgABAAIAAAANAAgABgABAAIAAAAFAAcABgABAAEAAAAFAAYABgABAAEAAAAEAAYABgABAAEAAAADAAYABgABAAEAAAACAAYABgABAAEAAAABAAYABgABAAEAAAABAAcABgABAAEAAAACAAcABgABAAEAAAADAAcABgABAAEAAAAEAAcABgABAAEAAAAGAAYACwABAAEAAAAGAAcACwABAAEAAAAHAAcABgABAAEAAAAHAAYABgABAAEAAAAIAAYACwABAAEAAAAIAAcABgABAAEAAAAJAAcACwABAAEAAAAJAAYABgABAAEAAAAKAAYABgABAAEAAAAKAAcACwABAAEAAAALAAcABgABAAEAAAALAAYACwABAAEAAAAMAAYABgABAAEAAAAMAAcACwABAAEAAAANAAcACwABAAEAAAANAAYABgABAAEAAAAAAAMAEwAAAAEAAAAAAAIAEwAAAAEAAAAAAAEAEwAAAAEAAAAAAAAAEwAAAAAAAAABAAAAEwABAAAAAAACAAAAEwABAAAAAAADAAAAEwABAAAAAAAEAAAAEwABAAAAAAAFAAAAEwABAAAAAAAGAAAAEwABAAAAAAAHAAAAEwABAAAAAAAIAAAAEwABAAAAAAAJAAAAEwABAAAAAAAKAAAAEwABAAAAAAALAAAAEwABAAAAAAAMAAAAEwABAAAAAAANAAAAEwABAAAAAAAOAAAAEwACAAAAAAAOAAEAEwACAAEAAAAOAAIAEwACAAEAAAAOAAMADAABAAEAAAAJAAIAEwABAAEAAAAJAAEAEwABAAEAAAAIAAEAEgABAAEAAAAHAAEAEwABAAEAAAAGAAEAEwABAAEAAAAFAAEAEwABAAEAAAAEAAEAEwABAAEAAAADAAEAEwABAAEAAAACAAEAEwABAAEAAAABAAEAEwABAAEAAAABAAIAEwABAAEAAAABAAMAEgABAAEAAAACAAMAEwABAAEAAAACAAIAEwABAAEAAAADAAIAEwABAAEAAAADAAMAEwABAAEAAAAEAAMAEwABAAEAAAAEAAIAEwABAAEAAAAFAAIAEgABAAEAAAAFAAMAEwABAAEAAAAGAAMAEwABAAEAAAAGAAIAEwABAAEAAAAHAAIAEwABAAEAAAAHAAMAEgABAAEAAAAIAAMAEwABAAEAAAAIAAIAEwABAAEAAAAJAAMAEwABAAEAAAAKAAMAEwABAAEAAAAKAAIAEwABAAEAAAAKAAEAEwABAAEAAAALAAEAEwABAAEAAAALAAIAEgABAAEAAAALAAMAEgABAAEAAAAMAAMAEwABAAEAAAAMAAIAEwABAAEAAAAMAAEAEwABAAEAAAANAAEAEwABAAEAAAANAAIAEwABAAEAAAANAAMAEwABAAEAAAA=")
 tile_set = ExtResource("3_o5ika")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1786779640]
@@ -53,9 +74,9 @@ editor_draw_limits = true
 y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround" unique_id=34892077]
-position = Vector2(400, 349)
+position = Vector2(218, 400)
 sprite_frames = ExtResource("3_276wt")
-animation = &"idle"
+animation = &"walk"
 autoplay = "idle"
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="." unique_id=1079050818]
@@ -67,19 +88,34 @@ next_scene = "uid://cufkthb25mpxy"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="Champ" type="CharacterBody2D" parent="." unique_id=514818323]
+up_direction = Vector2(0.019976014, 0.99980044)
 script = ExtResource("7_jdkp3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Champ" unique_id=1886747937]
 shape = SubResource("CircleShape2D_f2mqr")
 
-[node name="Label" type="Label" parent="Champ" unique_id=1256574489]
-offset_left = 305.0
-offset_top = 161.0
-offset_right = 409.0
-offset_bottom = 184.0
-text = "Animate me!"
-
 [node name="Champ Animation" type="AnimatedSprite2D" parent="Champ" unique_id=1380677161]
-position = Vector2(372, 151)
+position = Vector2(318.5, 162.5)
+scale = Vector2(3.005, 2.079)
 sprite_frames = SubResource("SpriteFrames_6d3de")
 autoplay = "default"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1518334986]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1783727570]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FadeRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=1212591081]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(60.23, 60.23)
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Control/FadeRect" unique_id=1043310223]
+libraries/ = SubResource("AnimationLibrary_5qhkq")

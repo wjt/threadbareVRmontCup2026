@@ -24,7 +24,8 @@ extends Node
 ## [AudioStreamPlaylist], you can set the [member AudioStreamPlaylist.loop]
 ## property. For an [AudioStreamInteractive], with great power comes great
 ## responsibility.
-@export var stream: AudioStream:
+@export var stream: AudioStream: 
+	
 	set(new_value):
 		stream = new_value
 		update_configuration_warnings()
@@ -104,3 +105,5 @@ func stop() -> void:
 func switch_to_clip(clip_name: StringName) -> void:
 	# TODO: remove this wrapper?
 	MusicPlayer.switch_to_clip(clip_name)
+	
+	$BackgroundMusic.volume += 200

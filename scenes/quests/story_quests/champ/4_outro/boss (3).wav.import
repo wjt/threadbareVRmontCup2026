@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://j5qeqm3anqw"
+path="res://.godot/imported/boss (3).wav-49b2590e82e7b21bab1ff055930cd629.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/champ/4_outro/boss (3).wav"
+dest_files=["res://.godot/imported/boss (3).wav-49b2590e82e7b21bab1ff055930cd629.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

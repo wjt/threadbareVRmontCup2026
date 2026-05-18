@@ -8,7 +8,7 @@ extends CharacterBody2D
 @export var swim_speed: int = 100
 
 func _ready() -> void:
-	# Give champ a starting swim speed
+	champ_animation.play("default")
 	velocity.x = swim_speed
 
 func _physics_process(_delta: float) -> void:
