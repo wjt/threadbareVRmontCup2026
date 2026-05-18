@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c51ad5akpk8j8"
+path="res://.godot/imported/champ_collected.dialogue-801834cb9983b51a7e27fcb2a5640df0.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/champ_collected.dialogue"
+dest_files=["res://.godot/imported/champ_collected.dialogue-801834cb9983b51a7e27fcb2a5640df0.tres"]
+
+[params]
+
+defaults=true

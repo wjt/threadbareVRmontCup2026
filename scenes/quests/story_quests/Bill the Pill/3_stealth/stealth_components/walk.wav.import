@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://brofx2seaphlw"
+path="res://.godot/imported/walk.wav-696842414d9f389eb49230e61a89c425.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/walk.wav"
+dest_files=["res://.godot/imported/walk.wav-696842414d9f389eb49230e61a89c425.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cwp3r5nyfb0bf"
+path="res://.godot/imported/champ_outro.dialogue-104758ec804c31cbd549f584915da8bb.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/4_outro/outro_components/champ_outro.dialogue"
+dest_files=["res://.godot/imported/champ_outro.dialogue-104758ec804c31cbd549f584915da8bb.tres"]
+
+[params]
+
+defaults=true

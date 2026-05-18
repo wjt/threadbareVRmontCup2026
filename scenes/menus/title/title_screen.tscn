@@ -2,9 +2,9 @@
 
 [ext_resource type="Theme" uid="uid://cvitou84ni7qe" path="res://scenes/ui_elements/components/theme.tres" id="1_kj1pq"]
 [ext_resource type="Script" uid="uid://c6nc0jka32ow2" path="res://scenes/menus/title/components/title_screen.gd" id="2_0vy2n"]
+[ext_resource type="AudioStream" uid="uid://bbamdm6wtjjcn" path="res://assets/first_party/music/Threadbare_Bed.ogg" id="4_5uobg"]
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="4_c6kyi"]
 [ext_resource type="PackedScene" uid="uid://wgmdsj1sbmja" path="res://scenes/menus/title/components/main_menu.tscn" id="5_0vy2n"]
-[ext_resource type="AudioStream" uid="uid://kc657macgib4" path="res://assets/first_party/music/Threadbare_Main_Loud.ogg" id="5_5uobg"]
 [ext_resource type="Texture2D" uid="uid://lg5dl13njsg3" path="res://assets/first_party/tiles/Grass_And_Sand_Tiles.png" id="5_c6kyi"]
 [ext_resource type="PackedScene" uid="uid://6s70kur03rjk" path="res://scenes/menus/title/components/credits.tscn" id="6_2ijyo"]
 [ext_resource type="PackedScene" uid="uid://dkeb0yjgcfi86" path="res://scenes/menus/options/options.tscn" id="8_5uobg"]
@@ -23,17 +23,19 @@ script = ExtResource("2_0vy2n")
 intro_scene = "uid://dow5vc7yb5k2c"
 
 [node name="BackgroundMusic" parent="." unique_id=2002868584 instance=ExtResource("4_c6kyi")]
-stream = ExtResource("5_5uobg")
+stream = ExtResource("4_5uobg")
 
 [node name="FabricBackground" type="NinePatchRect" parent="." unique_id=981246541]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 5.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_c6kyi")
-region_rect = Rect2(384, 64, 64, 64)
+region_rect = Rect2(385, 64, 63, 64)
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
@@ -42,6 +44,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 179.0
+offset_top = 81.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_2ijyo")

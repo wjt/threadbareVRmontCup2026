@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://st2iaphwg25c"
+path="res://.godot/imported/Alerted_sound_effect.wav-1b97ce6c832ad31c2a340fc623458a4a.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/Alerted_sound_effect.wav"
+dest_files=["res://.godot/imported/Alerted_sound_effect.wav-1b97ce6c832ad31c2a340fc623458a4a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=true
+force/max_rate_hz=192000.0
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

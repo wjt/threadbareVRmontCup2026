@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+do animation_player.play(&"walk_on")
+do animation_player.animation_finished
+Odin: Bill the Pill. *cough* we need your help.
+Baldur: We are infected with a terrible disease. We need you to get us a cure. *ACHOO!*
+ Bill: What cure? Who are you?
+Freya: We are the Norse gods. We are infected with a terrible disease. The common cold! The cure is a warm blanket made of the threads of imagination, memory and spirit. *Sniffle*
+do animation_player.play(&"walk_off")
+Bill: I will go! I am very important in this Storyquest. I will save you!
+Thor: What's a Storyquest? *sniffle*
+=> END!

@@ -75,9 +75,6 @@ visible = true
 script = ExtResource("4_kiv56")
 input_action = "move_left"
 
-[node name="AudioStreamPlayer2D" parent="PlayersContainer/charlie/PlayerFighting/AirStream" parent_id_path=PackedInt32Array(1453346405, 642627191) index="2" unique_id=25920746]
-bus = &"SFX"
-
 [node name="bryan" parent="PlayersContainer" unique_id=1722313202 instance=ExtResource("1_n5amm")]
 z_index = 1
 position = Vector2(920, 638)
@@ -104,9 +101,6 @@ process_mode = 0
 visible = true
 script = ExtResource("4_kiv56")
 input_action = "move_right"
-
-[node name="AudioStreamPlayer2D" parent="PlayersContainer/bryan/PlayerFighting/AirStream" parent_id_path=PackedInt32Array(1722313202, 642627191) index="2" unique_id=25920746]
-bus = &"SFX"
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="." unique_id=609593329]
 
@@ -203,7 +197,7 @@ position = Vector2(716, 392)
 script = ExtResource("18_fq20r")
 needed_amount = 50
 
-[node name="HitBox" parent="BossHealth" index="1" unique_id=1847617565]
+[node name="HitBox" parent="BossHealth" index="2" unique_id=1847617565]
 position = Vector2(-2, 54)
 
 [node name="CollisionShape2D" parent="BossHealth/HitBox" index="0" unique_id=426954511]

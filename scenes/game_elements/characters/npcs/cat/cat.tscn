@@ -4,7 +4,7 @@
 [ext_resource type="SpriteFrames" uid="uid://caou2u7vffhei" path="res://scenes/game_elements/characters/npcs/cat/components/cat.tres" id="3_qosq0"]
 [ext_resource type="Script" uid="uid://du8wfijr35r35" path="res://scenes/game_elements/props/interact_area/components/interact_area.gd" id="4_8kxh7"]
 [ext_resource type="Script" uid="uid://djeshbrs3vwnb" path="res://scenes/game_elements/characters/npcs/cat/components/pet_interaction.gd" id="4_t04tf"]
-[ext_resource type="AudioStream" uid="uid://di2b2rgca1udv" path="res://scenes/game_elements/characters/npcs/cat/components/412017__skymary__cat-meow-short.wav" id="5_t04tf"]
+[ext_resource type="AudioStream" uid="uid://517wipg30r77" path="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/uh oh.wav" id="5_t04tf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
 height = 26.0

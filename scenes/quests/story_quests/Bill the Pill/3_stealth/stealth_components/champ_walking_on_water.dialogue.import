@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cxjgjjb44ssnm"
+path="res://.godot/imported/champ_walking_on_water.dialogue-306240308bbeeda0ef712fbacd07131e.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/champ_walking_on_water.dialogue"
+dest_files=["res://.godot/imported/champ_walking_on_water.dialogue-306240308bbeeda0ef712fbacd07131e.tres"]
+
+[params]
+
+defaults=true

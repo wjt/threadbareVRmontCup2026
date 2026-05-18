@@ -235,15 +235,19 @@ position = Vector2(465.862, 159.547)
 
 [node name="HidingMushroom" parent="Props" unique_id=806733559 instance=ExtResource("11_jqkod")]
 position = Vector2(906, 1516)
+scale = Vector2(4, 4)
 
 [node name="HidingMushroom2" parent="Props" unique_id=320834486 instance=ExtResource("11_jqkod")]
 position = Vector2(1061, 1643)
+scale = Vector2(1.5, 1.5)
 
 [node name="HidingMushroom3" parent="Props" unique_id=47733831 instance=ExtResource("11_jqkod")]
 position = Vector2(929, 1235)
+scale = Vector2(2, 2)
 
 [node name="HidingMushroom4" parent="Props" unique_id=631928334 instance=ExtResource("11_jqkod")]
 position = Vector2(1049, 1193)
+scale = Vector2(3, 3)
 
 [node name="Books" parent="Props" unique_id=605503809 instance=ExtResource("12_06x6x")]
 position = Vector2(616, 611)
@@ -374,7 +378,7 @@ debug_color = Color(0.600391, 0.54335, 0, 0.42)
 [node name="FarmersPartner" parent="NPCs" unique_id=1246028381 instance=ExtResource("54_duxxr")]
 position = Vector2(1638, 841)
 scale = Vector2(-1, 1)
-character_seed = 3260235337
+character_seed = 124653465623
 look_at_side = 1
 
 [node name="GardenerA" parent="NPCs" unique_id=1887606289 instance=ExtResource("54_duxxr")]
@@ -1122,6 +1126,8 @@ metadata/_custom_type_script = "uid://edcifob4jc4s"
 position = Vector2(62, 1747)
 
 [node name="TimeAndWeather" parent="." unique_id=1446545037 instance=ExtResource("55_ojao8")]
+use_system_time = false
+time_scale = 1.0
 
 [connection signal="interaction_ended" from="NPCs/Farmer/InteractArea" to="NPCs/Farmer" method="_on_interact_area_interaction_ended"]
 [connection signal="interaction_started" from="NPCs/Farmer/InteractArea" to="NPCs/Farmer" method="_on_interact_area_interaction_started"]

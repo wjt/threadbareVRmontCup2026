@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cvuitsm15yyaw"
+path="res://.godot/imported/champ_combat.dialogue-5f2f8bd6ba5971cf22e6d6538d62bd84.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/1_combat/combat_components/champ_combat.dialogue"
+dest_files=["res://.godot/imported/champ_combat.dialogue-5f2f8bd6ba5971cf22e6d6538d62bd84.tres"]
+
+[params]
+
+defaults=true

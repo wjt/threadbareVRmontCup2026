@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c4eaioxcrhg07"
+path="res://.godot/imported/champ_sequence_puzzle_lore.dialogue-4d45e1d08760b546404d75ca0248d5d4.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/2_sequence_puzzle/learner_edits/champ_sequence_puzzle_lore.dialogue"
+dest_files=["res://.godot/imported/champ_sequence_puzzle_lore.dialogue-4d45e1d08760b546404d75ca0248d5d4.tres"]
+
+[params]
+
+defaults=true

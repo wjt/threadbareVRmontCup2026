@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://cwlb5iclvp44u"]
+
+[ext_resource type="Script" uid="uid://dts1hwdy3phin" path="res://scenes/menus/storybook/components/quest.gd" id="1_qxsdu"]
+[ext_resource type="Texture2D" uid="uid://bojxw3ny1j062" path="res://scenes/quests/story_quests/Bill the Pill/0_intro/intro_components/New Piskel-1.png (1) (2).png" id="2_rvp3v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7j68"]
+atlas = ExtResource("2_rvp3v")
+region = Rect2(0, 0, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8cvb"]
+atlas = ExtResource("2_rvp3v")
+region = Rect2(81, 0, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6epm"]
+atlas = ExtResource("2_rvp3v")
+region = Rect2(0, 81, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f8ap"]
+atlas = ExtResource("2_rvp3v")
+region = Rect2(81, 81, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t8o1w"]
+atlas = ExtResource("2_rvp3v")
+region = Rect2(0, 162, 81, 81)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mwofu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h7j68")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8cvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6epm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f8ap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8o1w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1_qxsdu")
+title = "Bill the Pill and the Norse gods"
+description = "Bill is a pill. One day, he somehow finds himself in Valhalla. The Norse gods are infected with a cold. But not just any cold! A cold that can only be healed by a blanket made of the threads of Memory, Imagination, and Spirit. Bill sets off on a daring quest to collect the threads. Who and What will he encounter?!"
+authors = Array[String](["Stellan Shutter", "Cian Shutter"])
+first_scene = "uid://dvtsxw4ib6v1d"
+sprite_frames = SubResource("SpriteFrames_mwofu")
+animation_name = &"default"
+metadata/_custom_type_script = "uid://dts1hwdy3phin"

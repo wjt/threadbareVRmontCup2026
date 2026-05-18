@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+Bill the Pill arrives at the lake, where he stops to take in the view. He notices something bobbing in the water.
+Bill: What is that?! 
+Cop Cough: I'm Cop Cough, and I'm here to cough on you and give you diseases!
+Bill: OH NO! Wait, I can use my hand fan to blow away the cough clouds and destroy his shield runes!
+Cop Cough: GRR! You can't beat me!!
+=> END
+
+~ well_done
+Cop Cough: NOOOOOOOOOOOOO! AAAAARRRRRGGGHHH!
+Bill: Cop Cough has been defeated, and it turns out he had the Thread of Imagination.
+Bill moved on in his journey for the Threads.
+Bill: There's a lot of thread here. Maybe I'll get to keep some.
+Cop Cough: I'll get you back someday!
+=> END

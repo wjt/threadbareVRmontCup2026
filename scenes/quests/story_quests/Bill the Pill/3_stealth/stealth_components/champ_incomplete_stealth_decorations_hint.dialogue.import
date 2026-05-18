@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b7ln3pvi43t77"
+path="res://.godot/imported/champ_incomplete_stealth_decorations_hint.dialogue-f5c18894fafd57a23c6de188da4df1ae.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/champ_incomplete_stealth_decorations_hint.dialogue"
+dest_files=["res://.godot/imported/champ_incomplete_stealth_decorations_hint.dialogue-f5c18894fafd57a23c6de188da4df1ae.tres"]
+
+[params]
+
+defaults=true

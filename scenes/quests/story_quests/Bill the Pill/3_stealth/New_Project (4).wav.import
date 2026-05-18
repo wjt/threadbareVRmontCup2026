@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://djje5qayr6t5k"
+path="res://.godot/imported/New_Project (4).wav-bc7cdc05c27e90fcf2891b450c61ad21.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/New_Project (4).wav"
+dest_files=["res://.godot/imported/New_Project (4).wav-bc7cdc05c27e90fcf2891b450c61ad21.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

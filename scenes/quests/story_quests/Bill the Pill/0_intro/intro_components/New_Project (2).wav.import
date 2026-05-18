@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://byyad1cqvfem5"
+path="res://.godot/imported/New_Project (2).wav-006200075110a9ae6ebfa577217af1d0.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/0_intro/intro_components/New_Project (2).wav"
+dest_files=["res://.godot/imported/New_Project (2).wav-006200075110a9ae6ebfa577217af1d0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

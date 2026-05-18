@@ -53,3 +53,4 @@ func stop() -> void:
 ## switch to [param clip_name].
 func switch_to_clip(clip_name: StringName) -> void:
 	MusicPlayer.switch_to_clip(clip_name)
+	

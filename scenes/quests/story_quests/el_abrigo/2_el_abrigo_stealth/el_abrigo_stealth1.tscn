@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://dfwpehorj34mx"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_8bqyi"]
-[ext_resource type="TileSet" uid="uid://cbbshdkxebjh6" path="res://scenes/quests/story_quests/champ/tiles/champ_exterior_floors.tres" id="2_ns4g4"]
-[ext_resource type="TileSet" uid="uid://djck8217try86" path="res://scenes/quests/story_quests/champ/tiles/champ_elevation.tres" id="3_akp4c"]
+[ext_resource type="TileSet" uid="uid://cbbshdkxebjh6" path="res://scenes/quests/story_quests/Bill the Pill/tiles/champ_exterior_floors.tres" id="2_ns4g4"]
+[ext_resource type="TileSet" uid="uid://djck8217try86" path="res://scenes/quests/story_quests/Bill the Pill/tiles/champ_elevation.tres" id="3_akp4c"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="4_gdnt6"]
 [ext_resource type="SpriteFrames" uid="uid://maj2nfoclfwd" path="res://scenes/quests/story_quests/el_abrigo/el_abrigo_player_components/el_abrigo_player.tres" id="5_8bqyi"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="6_g6y8c"]

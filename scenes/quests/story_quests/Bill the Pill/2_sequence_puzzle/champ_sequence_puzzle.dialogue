@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Bill spots a creepy looking castle in the distance. He knows he probably has to go there for his mission to continue.
+But a lake filled with slippery stones are in his way. Bill must traverse the stones to proceed to the castle. 
+Bill: GULP!
+=> END
+~ well_done
+Bill: I made it!  
+Bill has found a thread, which means the castle is his last stop.
+Determined now, he heads towards the Castle.
+=> END

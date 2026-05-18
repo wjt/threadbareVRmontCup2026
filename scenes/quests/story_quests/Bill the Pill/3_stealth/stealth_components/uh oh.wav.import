@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://517wipg30r77"
+path="res://.godot/imported/uh oh.wav-9a2f0b3a488096432b3c3ea1c4d33b2f.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/uh oh.wav"
+dest_files=["res://.godot/imported/uh oh.wav-9a2f0b3a488096432b3c3ea1c4d33b2f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

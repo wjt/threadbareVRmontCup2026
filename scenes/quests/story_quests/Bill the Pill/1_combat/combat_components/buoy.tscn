@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cd24crxnn6c3n"]
+
+[ext_resource type="Texture2D" uid="uid://bua708cth65a4" path="res://scenes/quests/story_quests/Bill the Pill/1_combat/combat_components/New Piskel-1.png (10).png" id="1_38d7t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_huixn"]
+atlas = ExtResource("1_38d7t")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_13my5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_huixn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_huixn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_huixn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_huixn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8v3oq"]
+radius = 26.076809
+
+[node name="Buoy" type="Node2D" unique_id=1543752827]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=442459250]
+sprite_frames = SubResource("SpriteFrames_13my5")
+autoplay = "default"
+frame_progress = 0.76506466
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1190209368]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1351038951]
+position = Vector2(2, -3)
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_8v3oq")

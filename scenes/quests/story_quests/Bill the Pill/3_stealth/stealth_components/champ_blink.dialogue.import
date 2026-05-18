@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bmharix12w26t"
+path="res://.godot/imported/champ_blink.dialogue-f0892875280a3f759ff2ddc52adb75b2.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/champ_blink.dialogue"
+dest_files=["res://.godot/imported/champ_blink.dialogue-f0892875280a3f759ff2ddc52adb75b2.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://5puy1xk3bfva"]
+
+[ext_resource type="Texture2D" uid="uid://reegfb3cr2li" path="res://scenes/quests/story_quests/Bill the Pill/1_combat/combat_components/New Piskel-1.png (7).png" id="1_alduf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pi73"]
+atlas = ExtResource("1_alduf")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pi73")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

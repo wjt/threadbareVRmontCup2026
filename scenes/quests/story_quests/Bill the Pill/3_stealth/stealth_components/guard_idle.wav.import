@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://7e8006abv2fn"
+path="res://.godot/imported/guard_idle.wav-d67c362cd4f3e05eca81cf260c98b216.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/guard_idle.wav"
+dest_files=["res://.godot/imported/guard_idle.wav-d67c362cd4f3e05eca81cf260c98b216.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

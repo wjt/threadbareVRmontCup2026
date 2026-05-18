@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c3yuq52k21sga"
+path="res://.godot/imported/champ_incomplete_stealth_guard_path_hint.dialogue-959f7c09b3b5cdbb77a2bd7e49bfc361.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/champ_incomplete_stealth_guard_path_hint.dialogue"
+dest_files=["res://.godot/imported/champ_incomplete_stealth_guard_path_hint.dialogue-959f7c09b3b5cdbb77a2bd7e49bfc361.tres"]
+
+[params]
+
+defaults=true

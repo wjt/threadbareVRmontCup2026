@@ -153,7 +153,7 @@ metadata/_edit_lock_ = true
 position = Vector2(30, 76)
 
 [node name="IntroImage" type="Sprite2D" parent="TileMapLayers" unique_id=803933216]
-position = Vector2(843, 260)
+position = Vector2(842, 254)
 scale = Vector2(2, 2)
 texture = ExtResource("3_3rlya")
 
@@ -179,6 +179,7 @@ position = Vector2(400, 349)
 sprite_frames = ExtResource("3_6qcmh")
 animation = &"idle"
 autoplay = "idle"
+frame_progress = 0.6936958
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="OnTheGround" unique_id=624264170]
 root_node = NodePath("../..")

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dqj53ffq0tgqd"
+path="res://.godot/imported/champ_intro.dialogue-ce9c4198fc8dbb7474798d5682967bef.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/0_intro/intro_components/champ_intro.dialogue"
+dest_files=["res://.godot/imported/champ_intro.dialogue-ce9c4198fc8dbb7474798d5682967bef.tres"]
+
+[params]
+
+defaults=true

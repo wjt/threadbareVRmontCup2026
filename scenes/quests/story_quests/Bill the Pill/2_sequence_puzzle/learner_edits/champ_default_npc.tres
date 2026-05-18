@@ -1,0 +1,72 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://h85time5ateg"]
+
+[ext_resource type="Texture2D" uid="uid://dqpbfdtpf4cll" path="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/Quarter.png" id="2_5fyqo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_big45"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(0, 0, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fyqo"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(81, 0, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bf00"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(0, 81, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfba0"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(81, 81, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qenyr"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(0, 0, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6igk0"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(81, 0, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8wud"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(0, 81, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxi7y"]
+atlas = ExtResource("2_5fyqo")
+region = Rect2(81, 81, 81, 81)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_big45")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fyqo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bf00")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfba0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qenyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6igk0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8wud")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxi7y")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]

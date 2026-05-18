@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1qhmlf8hcbnv"
+path="res://.godot/imported/champ_rock_sound.ogg-550124310722e0a4fbf0d5ccb7f877ed.oggvorbisstr"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/2_sequence_puzzle/champ_rock_sound.ogg"
+dest_files=["res://.godot/imported/champ_rock_sound.ogg-550124310722e0a4fbf0d5ccb7f877ed.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

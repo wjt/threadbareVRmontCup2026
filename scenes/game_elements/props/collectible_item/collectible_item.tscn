@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://fuhl3l6gxq5k"]
 
 [ext_resource type="Script" uid="uid://be7lr8ty24cix" path="res://scenes/game_elements/props/collectible_item/components/collectible_item.gd" id="1_7ff3m"]
+[ext_resource type="AudioStream" uid="uid://c6kpc8knggotn" path="res://scenes/quests/story_quests/Bill the Pill/0_intro/intro_components/yay.wav" id="4_1kegn"]
 [ext_resource type="AudioStream" uid="uid://bhgpds38q0j4r" path="res://assets/third_party/sounds/collectibles/MemoryCollectable.ogg" id="5_hhgm5"]
-[ext_resource type="AudioStream" uid="uid://38xwdjm46478" path="res://assets/third_party/sounds/collectibles/CollectibleAppear.ogg" id="5_oh62b"]
 [ext_resource type="PackedScene" uid="uid://dutgnbiy7xalb" path="res://scenes/game_elements/props/interact_area/interact_area.tscn" id="6_j0enh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ghwae"]
@@ -298,7 +298,7 @@ bus = &"SFX"
 
 [node name="AppearSound" type="AudioStreamPlayer" parent="." unique_id=1905717027]
 unique_name_in_owner = true
-stream = ExtResource("5_oh62b")
+stream = ExtResource("4_1kegn")
 bus = &"SFX"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=9475262]

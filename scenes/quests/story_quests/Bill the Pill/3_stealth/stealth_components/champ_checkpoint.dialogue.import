@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://2loy45jwblo4"
+path="res://.godot/imported/champ_checkpoint.dialogue-fd46b2fb3075cf2bea6d1decf5220725.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/Bill the Pill/3_stealth/stealth_components/champ_checkpoint.dialogue"
+dest_files=["res://.godot/imported/champ_checkpoint.dialogue-fd46b2fb3075cf2bea6d1decf5220725.tres"]
+
+[params]
+
+defaults=true
