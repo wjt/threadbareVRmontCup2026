@@ -2,12 +2,12 @@
 
 [ext_resource type="AudioStream" uid="uid://df7ldbesilfry" path="res://assets/first_party/music/Threadbare Loop_Main_Bridge_02.ogg" id="1_m7ukv"]
 [ext_resource type="TileSet" uid="uid://bo4jyvl3lcww1" path="res://scenes/quests/story_quests/champ/champ_tileset.tres" id="1_xxoe7"]
-[ext_resource type="Texture2D" uid="uid://uck435sfeeac" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/champ_intro_image.png" id="2_u4i0h"]
-[ext_resource type="Texture2D" uid="uid://bka66bneqlx06" path="res://scenes/quests/story_quests/champ/tiles/assets/poster_bigfoot.png" id="2_ufx21"]
-[ext_resource type="Texture2D" uid="uid://ujqhbghqjhdq" path="res://scenes/quests/story_quests/champ/tiles/assets/poster_kraken.png" id="3_kpqku"]
+[ext_resource type="Texture2D" uid="uid://dvhq27lhlq4p7" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/big-foot-poster.png" id="2_43j7a"]
+[ext_resource type="Texture2D" uid="uid://crd4shh2sblyo" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/kraken-poster.png" id="3_43j7a"]
 [ext_resource type="SpriteFrames" uid="uid://ctjbkxw0r2f2i" path="res://scenes/quests/story_quests/champ/player_components/champ_player.tres" id="3_ufx21"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_kpqku"]
-[ext_resource type="Texture2D" uid="uid://ccemoeu8477od" path="res://scenes/quests/story_quests/champ/tiles/assets/poster_yeti.png" id="4_m7ukv"]
+[ext_resource type="Texture2D" uid="uid://beab7i0710pqi" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/yeti-poster.png" id="4_w33xd"]
+[ext_resource type="Texture2D" uid="uid://fdglcxp5yr7r" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/champ.png" id="5_43j7a"]
 [ext_resource type="Resource" uid="uid://dqj53ffq0tgqd" path="res://scenes/quests/story_quests/champ/0_intro/intro_components/champ_intro.dialogue" id="5_m7ukv"]
 [ext_resource type="Texture2D" uid="uid://dml1odsg20jgn" path="res://scenes/quests/story_quests/champ/tiles/assets/tape.png" id="6_kpqku"]
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="10_43j7a"]
@@ -112,19 +112,19 @@ tile_set = ExtResource("1_xxoe7")
 
 [node name="Bigfoot" type="Sprite2D" parent="TileMapLayers" unique_id=1339619381]
 position = Vector2(414, 106)
-texture = ExtResource("2_ufx21")
+texture = ExtResource("2_43j7a")
 
 [node name="Kraken" type="Sprite2D" parent="TileMapLayers" unique_id=126392439]
 position = Vector2(570, 275)
-texture = ExtResource("3_kpqku")
+texture = ExtResource("3_43j7a")
 
 [node name="Yeti" type="Sprite2D" parent="TileMapLayers" unique_id=932942387]
 position = Vector2(726, 95)
-texture = ExtResource("4_m7ukv")
+texture = ExtResource("4_w33xd")
 
 [node name="Champ" type="Sprite2D" parent="TileMapLayers" unique_id=1198352511]
 position = Vector2(871, 265)
-texture = ExtResource("2_u4i0h")
+texture = ExtResource("5_43j7a")
 
 [node name="tapes" type="Node2D" parent="TileMapLayers" unique_id=603911364]
 

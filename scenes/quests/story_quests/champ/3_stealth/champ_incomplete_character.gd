@@ -23,7 +23,8 @@ var input_vector: Vector2
 @export var blink_bounds: Area2D
 ## How many 64px tiles the player should teleport when the blink key (c) is pressed.
 @export_range(0,24,0.5,"suffix:tiles") var blink_distance = 3.0
-
+## copied from Document A.B
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 ## Controls how the player can interact with the world around them.
 enum Mode {
@@ -46,6 +47,11 @@ func _physics_process(delta: float) -> void:
 	if mode == Mode.DEFEATED:
 		velocity = Vector2.ZERO
 		return
+		
+	if velocity.is_zero_approx():
+		animated_sprite.play(&"walk")
+	else:
+		animated_sprite.play(&"idle")
 	
 	# Handle stopping and moving
 	var step := (
@@ -109,6 +115,10 @@ func _unhandled_input(_event: InputEvent) -> void:
 		axis.x = -1
 	if(Input.is_action_pressed(&"move_right")):
 		axis.x = 1
+	if(Input.is_action_pressed(&"move_up")):
+		axis.y = -1
+	if(Input.is_action_pressed(&"move_down")):
+		axis.y = 1
 	input_vector = axis * SPEED
 	# TODO: how can we make the character walk up and down?
  	# TODO:  how can we make diagonal speed the same as walking in a straight line?

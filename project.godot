@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Threadbare"
+config/name="Team Two"
 config/tags=PackedStringArray("2d", "endless", "game", "tilemap", "top_down")
-run/main_scene="uid://huuo8mnwsphv"
+run/main_scene="uid://dvtsxw4ib6v1d"
 config/project_settings_override="user://custom_overrides.cfg"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/stretch_mode=0
